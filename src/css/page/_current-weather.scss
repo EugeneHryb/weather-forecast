@@ -1,0 +1,41 @@
+.current-weather{
+    margin-top: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    &__icow-wrapp{
+        & > .inline-svg-icon{
+            width: 100%;
+            fill: $appTextColor;
+        }
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__weather{
+        background-color: $appBgColor;
+        flex-grow: 1;
+    }
+
+    &__weather-wrapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: $defaultFont;
+        color: $appTextColor;
+        line-height: 1.5;
+    }
+
+    &__data{
+        font-size: 20px;
+        border-top: 2px solid $appTextColor;
+
+    }
+}

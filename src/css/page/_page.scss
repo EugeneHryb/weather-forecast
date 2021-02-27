@@ -1,0 +1,33 @@
+.page{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: $pageBG;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-family: $defaultFont;
+    color: $appTextColor;
+    line-height: 1.5;
+
+    &_clear{
+        @include bgCover(url('../../image/clearSky.jpg'));
+    }
+
+    &_cloudy{
+        @include bgCover(url('../../image/gloomySky.jpg'));
+    }
+}
+
+.weatherApp{
+    flex-grow: 1;
+}
+
+.svg__sprite{
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    cursor: none;
+
+}

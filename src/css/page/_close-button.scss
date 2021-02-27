@@ -1,0 +1,28 @@
+.close__button {
+    width: 33px;
+    height: 33px;
+    opacity: 0.3;
+    position: relative;
+}
+
+.close__button:hover {
+    opacity: 1;
+}
+
+.close__button:before,
+.close__button:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: $appTextColor;
+}
+
+.close__button:before {
+    transform: rotate(45deg);
+}
+
+.close__button:after {
+    transform: rotate(-45deg);
+}

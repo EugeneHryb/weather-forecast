@@ -1,0 +1,27 @@
+//Типография
+$firstFontName: 'Gotham';
+$follbak: Arial,
+Helvetica,
+sans-serif;
+
+$firstFont: $firstFontName,
+$follbak;
+
+$defaultFont: $firstFont;
+
+//Цвета
+
+$white:#ffffff;
+
+//color
+
+//page
+$pageBG: linear-gradient(-45deg,#54d3aa, #5567b9);
+
+//logo
+$logoColor: rgba($white, .8);
+
+//App
+
+$appBgColor: rgba($white, .4);
+$appTextColor: $white;

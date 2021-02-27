@@ -1,0 +1,27 @@
+.tab{
+
+    &__button{
+        background-color: $appBgColor;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $defaultFont;
+        color: rgba($color: $appTextColor, $alpha: .7);
+        transition: color .3s ease-in-out;
+        border-bottom: 1px solid $appTextColor;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        cursor: pointer;
+
+        &:hover{
+            color: rgba($color: $appTextColor, $alpha: 1);
+        }
+    }
+
+    &__active{
+        color: rgba($color: $appTextColor, $alpha: 1);
+    }
+}

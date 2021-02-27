@@ -1,0 +1,95 @@
+.forecast{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+
+    @include media($MD){
+        flex-direction: column-reverse
+    };
+
+    &__nav{
+        background-color: $appBgColor;
+    }
+
+
+    &__weather{
+        background-color: $appBgColor;
+        flex-grow: 1;
+    }
+
+    &__weather-hours{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    &__weather-hour{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    &__weather-day-title{
+        @include media($XL){
+            font-size: 18px;
+        }
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__temp{
+        font-weight: 700;
+    }
+
+    &__time{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__hour-description{
+        font-size: 18px;
+    }
+
+    &__hour-description{
+        padding-left: 10px;
+        width: 75%;
+    }
+
+    &__icon{
+        width: 25%;
+        fill: $appTextColor;
+    }
+
+    &__weather-day{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__wether{
+        font-size: 16px;
+    }
+    &__nav-btn{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover{
+            .forecast__icon-btn{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__icon-btn{
+        height: 40px;
+        width: 40px;
+        fill: $appTextColor;
+        transition: transform .5s ease-in-out;
+    }
+
+}

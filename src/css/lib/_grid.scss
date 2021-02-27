@@ -1,0 +1,125 @@
+//отступ между колонками
+$col-indent: 30px;
+//точка переключения размера XL
+$XL: 1200px;
+//ширина контейнера размера XL
+$XL_width:960px;
+//точка переключения размера LG
+$LG: 992px;
+//ширина контейнера размера LG
+$LG_width:720px;
+//точка переключения размера MD
+$MD: 768px;
+//ширина контейнера размера MD
+$MD_width:540px;
+//точка переключения размера SM
+$SM: 576px;
+//ширина контейнера размера SM
+$SM_width: 100%;
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: $col-indent / 2;
+}
+
+.row {
+    margin: 0 -#{$col-indent / 2};
+    display: flex;
+    @include hak-ie {
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+    }
+    flex-wrap: wrap;
+}
+
+.col-auto {
+    flex-basis: auto;
+    width: auto;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / 12 * $i;
+        flex-basis: 100% / 12 * $i;
+        padding: $col-indent / 2;
+    }
+}
+
+@for $i from 1 through 12 {
+    .offset-#{$i} {
+        margin-left: 100% / 12 * $i;
+    }
+}
+
+//XL
+
+@media (max-width:$XL ){
+    .container{
+        width: $XL_width;
+    }
+
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            width: 100% / 12 * $i;
+            flex-basis: 100% / 12 * $i;
+            padding: $col-indent / 2;
+        }
+    }
+}
+
+//LG
+
+@media (max-width: $LG){
+    .container{
+        width: $LG_width;
+    }
+
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            width: 100% / 12 * $i;
+            flex-basis: 100% / 12 * $i;
+            padding: $col-indent / 2;
+        }
+    }
+}
+
+//MD
+
+@media (max-width: $MD ){
+    .container{
+        width: $MD_width;
+    }
+
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: 100% / 12 * $i;
+            flex-basis: 100% / 12 * $i;
+            padding: $col-indent / 2;
+        }
+    }
+}
+
+//SM
+
+@media (max-width: $SM ){
+    .container{
+        width: $SM_width;
+    }
+
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            width: 100% / 12 * $i;
+            flex-basis: 100% / 12 * $i;
+            padding: $col-indent / 2;
+        }
+    }
+
+    .row{
+        margin: 0;
+    }
+}

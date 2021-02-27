@@ -1,0 +1,5 @@
+@include fontFace($firstFontName, './fonts/Gotham-Bold', normal, 700);
+
+@include fontFace($firstFontName, './fonts/Gotham-Medium', normal, 600);
+
+@include fontFace($firstFontName, './fonts/Gotham-Book', normal, 400);

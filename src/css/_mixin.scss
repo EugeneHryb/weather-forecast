@@ -1,0 +1,51 @@
+@mixin positionCenter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin bgCover($img) {
+    background-image: $img;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin fontFace($fontFamily, $fontPath, $fontStyle: normal, $fontWeight: normal) {
+    @font-face {
+        font-family: $fontFamily;
+        font-style: $fontStyle;
+        font-weight: $fontWeight;
+        src:url('#{$fontPath}.woff2') format('woff2'),
+        url('#{$fontPath}.woff') format('woff');
+    }
+}
+
+@mixin center-horizont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin center-vertical {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin hak-ie {
+
+    @media screen and (-ms-high-contrast: active),
+    (-ms-high-contrast: none) {
+        @content
+    }
+}
+
+@mixin media($size) {
+
+    @media screen and (max-width: $size) {
+        @content
+    }
+
+}
