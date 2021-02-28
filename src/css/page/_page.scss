@@ -20,6 +20,10 @@
         @include bgCover(url('../../image/gloomySky.jpg'));
     }
 
+    &_litleClouudy{
+        @include bgCover(url('../../image/little-cloudiness.jpg'));
+    }
+
     &__bg{
         position: fixed;
         top: 0;

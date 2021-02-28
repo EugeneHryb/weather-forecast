@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Mini weather station</title>
 </head>
 <body>
     <div class="page" id="weatherApp">
@@ -101,7 +101,7 @@
                                     <use v-bind:xlink:href="hour.icon"></use>
                                 </svg>
                                 <div class="forecast__hour-description">
-                                    <p class="forecast__time">{{hour.time}} - {{hour.temp}} &#176;C,</p>
+                                    <p class="forecast__time">{{hour.time}} / {{hour.temp}} &#176;C,</p>
                                     <p class="forecast__wether">{{hour.description}}</p>
                                     <p class="forecast__wether">min:{{hour.tempMin}}&#176;C / max:{{hour.tempMax}}&#176;C </p>
                                     <p class="forecast__wether">Ощущаестья как {{hour.feelsLike}}</p>

@@ -8,8 +8,9 @@ export const vComputed = {
             const icon = this.currentWeather.weather.icon;
             return {
                 page_clear: icon === '01d' || icon === '01n',
-                page_cloudy: icon !== '01d' && icon !== '01n' && icon!=='11d' && icon !== '11n',
+                page_cloudy: icon !== '01d' && icon !== '01n' && icon!=='11d' && icon !== '11n' && icon !== '02d' && icon !== '02n' && icon !== '10d' && icon !== '10n',
                 page_storm: icon ==='11d' || icon === '11n',
+                page_litleClouudy: icon === '02d' || icon === '02n' || icon === '10d' || icon === '10n',
             }
         }else {
             return {};
@@ -20,6 +21,4 @@ export const vComputed = {
     ifCities(){
         return this.findCity.cityList.length > 0
     }
-
-
 }
