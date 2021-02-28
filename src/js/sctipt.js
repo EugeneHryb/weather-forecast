@@ -22,3 +22,12 @@ const weatherApp = new Vue({
         initialization(this);
     },
 })
+
+//Preload
+
+const img1 = new Image();
+img1.src = './image/clearSky.jpg';
+const img2 = new Image();
+img2.src = './image/gloomySky.jpg';
+const img3 = new Image();
+img3.src = './image/thunderSky.jpg';

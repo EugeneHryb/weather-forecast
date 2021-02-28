@@ -31,11 +31,19 @@
         font-family: $defaultFont;
         color: $appTextColor;
         line-height: 1.5;
+
+        @include media($SM){
+            font-size: 18px;
+        }
     }
 
     &__data{
         font-size: 20px;
         border-top: 2px solid $appTextColor;
+
+        @include media($SM){
+            font-size: 16px;
+        }
 
     }
 }

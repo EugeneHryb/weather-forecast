@@ -7,6 +7,11 @@
         color: $logoColor;
         text-align: center;
         padding-bottom: 100px;
+
+        @include media($MD){
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
     }
 
 }

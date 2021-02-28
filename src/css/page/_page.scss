@@ -1,6 +1,5 @@
 .page{
     min-height: 100vh;
-    min-width: 100vw;
     background: $pageBG;
     display: flex;
     flex-direction: column;
@@ -9,12 +8,25 @@
     color: $appTextColor;
     line-height: 1.5;
 
+    & > header, & > main, & > footer {
+        z-index: 10;
+    }
+
     &_clear{
         @include bgCover(url('../../image/clearSky.jpg'));
     }
 
     &_cloudy{
         @include bgCover(url('../../image/gloomySky.jpg'));
+    }
+
+    &__bg{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
 }
 

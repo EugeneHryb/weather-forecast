@@ -18,6 +18,10 @@
             font-size: 22px;
         }
 
+        @include media($SM){
+            font-size: 18px;
+        }
+
     }
 
     &__button{
