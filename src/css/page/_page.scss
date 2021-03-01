@@ -7,6 +7,7 @@
     font-family: $defaultFont;
     color: $appTextColor;
     line-height: 1.5;
+    text-shadow: 1px 1px 5px $appTextShadow;
 
     & > header, & > main, & > footer {
         z-index: 10;
