@@ -12,6 +12,7 @@ $defaultFont: $firstFont;
 //Цвета
 
 $white:#ffffff;
+$riverBed: #484F5C;
 
 //color
 
@@ -25,3 +26,4 @@ $logoColor: rgba($white, .8);
 
 $appBgColor: rgba($white, .4);
 $appTextColor: $white;
+$appTextShadow: $riverBed;

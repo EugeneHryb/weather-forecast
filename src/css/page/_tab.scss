@@ -8,6 +8,7 @@
         font-weight: 700;
         text-transform: uppercase;
         font-family: $defaultFont;
+        text-shadow: 1px 1px 15px $appTextShadow;
         color: rgba($color: $appTextColor, $alpha: .7);
         transition: color .3s ease-in-out;
         border-bottom: 1px solid $appTextColor;
